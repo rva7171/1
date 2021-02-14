@@ -1,16 +1,20 @@
 "use strict";
 
-//alert("Hello");
-/* const result = confirm("Are you htre?");
-console.log(result); */
-/* const answer = prompt("Вам есть 18?", "18");
-console.log(typeof answer); */
+const numberOfFilms = +prompt("Сколько фильмов вы посмотрели?", "");
+const persanalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   generes: [],
+   privat: false,
+};
 
-let incr = 10,
-   decr = 10;
+const a = prompt("Один из последних просмотренных фильмов", ""),
+   b = prompt("На сколько оцените его?", ""),
+   c = prompt("Один из последних просмотренных фильмов", ""),
+   d = prompt("На сколько оцените его?", "");
 
-incr++;
-decr--;
+persanalMovieDB.movies[a] = b;
+persanalMovieDB.movies[c] = d;
 
-console.log(incr);
-console.log(decr);
+console.log(persanalMovieDB);
